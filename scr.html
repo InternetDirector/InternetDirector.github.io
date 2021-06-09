@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<style>
+   h1 {
+    text-align: center
+   }
+  </style>
+<script src="js/scripts.js"></script>
+</head>
+<body>
+<header>
+<ul>
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<a href="#">О нас</a>
+					</li>
+					<li>
+						<a href="#">Купить</a>
+					</li>
+					<li>
+						<a href="#">Что-то</a>
+					</li>
+					<li>
+						<a href="scr.html">Скрипты</a>
+					</li>
+				</ul>
+</header>
+<h1>Скрипты(10 вариант)</h1>
+<details>
+   <summary>11.1</summary>
+   <button onclick="Function11()">11.1</button>
+</details>
+<script>
+function Function11() {
+var x = Math.random();
+  alert((Math.abs(1-Math.random())+6.1/Math.sqrt(Math.pow(x,2)+2))+6*(1 / Math.tan(x)));
+}
+</script>
+<details>
+<summary>11.2</summary>
+   <button onclick="Function112()">11.2</button>
+</details>
+<script>
+function Function112() {
+var L = prompt('Введите длину(L)', 100);
+if (L == null)
+{return;}
+var R=L/(2*Math.PI);
+alert('Радиус= '+ R);
+alert('Площадь= '+Math.PI*Math.pow(R,2));
+}
+</script>
+<details>
+<summary>11.3</summary>
+<form  name="ELTH">
+          <a>Введите А</a><input id="A" name="A">
+          <a>Введите B</a><input id="N" name="B">
+		  <a>Введите C</a><input id="N" name="C">
+      </form>
+   <button onclick="Function113()">11.3</button>
+</details>
+<details>
+<summary>11.4</summary>
+<form  name="ELFO">
+          <a>Введите А</a><input id="A" name="vesh_n">
+          <a>Введите N</a><input id="N" name="cel_n">
+      </form>
+   <button onclick="Function114()">11.4</button>
+</details>
+<p id="p1">Этот пример показывает, как можно изменить размер шрифта данного абзаца.</p>
+<br><b><i>Размер шрифта: </i></b>
+<input type="Button" value="Увеличенный" onclick="modification(1);">
+<input type="Button" value="Нормальный" onclick="modification(0);">
+<input type="Button" value="Уменьшенный" onclick="modification(2);">
+<script language="JavaScript">
+function modification(action){
+switch(action) {
+  case 1:
+    document.all["p1"].style.fontSize="150%";
+    break;
+  case 0:
+    document.all["p1"].style.fontSize="100%";
+    break;
+	case 2:
+    document.all["p1"].style.fontSize="64%";
+    break;
+  default:
+    break;
+}
+}
+</script>
+<br>
+<b><i>Цвет фона: </i></b>
+<input type="Button" value="Чёрный" onclick="cngBg('black');">
+<input type="Button" value="Розовый" onclick="cngBg('pink');">
+<input type="Button" value="Тёмно-зелёный" onclick="cngBg('darkslategrey');">
+<input type="Button" value="Белый" onclick="cngBg('white');">
+<script language="JavaScript">
+function cngBg(clr){
+document.bgColor=clr;
+}
+</script>
+<br>
+<p onmouseover="this.style.color = 'white'" onmouseout="this.style.color=''">1) Напишите скрипт, изменяющий цвет текста первого абзаца при наведении мышкой.</p>
+2) Напишите скрипт, изменяющий цвет фона текста второго абзаца при щелчке мышкой.
+<br>
+3) Напишите скрипт, изменяющий цвет фона текста третьего абзаца при двойном щелчке.
+</body>
+</html>

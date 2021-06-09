@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Чай</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"> 
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="nav">
+				<img src="img/logo.svg" alt="Burning Man" class="logo">
+				<ul class="menu">
+					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
+						<a href="contacts.html">Контакты</a>
+					</li>
+					<li>
+						<a href="https://shop.ahmadtea.ru/">Купить</a>
+					</li>
+					<li>
+						<a href="#">Что-то</a>
+					</li>
+					<li>
+						<a href="scr.html">Скрипты</a>
+					</li>
+				</ul>
+				
+				
+				<a href="tel:+79003083927" class="tel">+7 900 308 39 27</a>
+					<button class="menu-open">
+					<img src="img/menu.svg" alt="Open menu">
+				</button>
+			</div>
+				<div class="offer">
+				<p>Чай</p>
+				<h1>AHMAD TEA</h1>
+				<a href="https://shop.ahmadtea.ru/" class="btn">Купить</a>
+			</div>
+		</div>
+		
+	</header>
+	<section id="about" class="about">
+		<div class="container">
+			<h2>Хиты продаж</h2>
+			<div class="gallery">
+				<img src="img/earl-grey.jpg" alt="Event photo 1">
+				<img src="img/maple-syrup.jpg" alt="Event photo 2">
+				<img src="img/summer-thyme.jpg" alt="Event photo 3">
+				<img src="img/english-breakfast.jpg" alt="Event photo 4">
+			</div>
+		</div>
+		<div class="description">
+			<div class="desc-left">
+				<h3>О компании</h3>
+				<p>Компания Ahmad Tea Ltd. основана в 1986 году в Великобритании, штаб-квартира компании и одно из чайных производств находится в графстве Гемпшир в Саутгемптоне.</p>
+			</div>
+			<div class="desc-right">
+				<h3>О продукте</h3>
+				<p>Чайные смеси марки Ahmad Tea тесно ассоциируются с английским образом жизни и английской культурой. Англичане сделали чай популярным на Западе и вывели «формулу» идеального чаепития. Трепетное и уважительное отношение к чаю как к требующему тонкого подхода к продукту воплощается в великолепных чайных смесях Ahmad Tea.</p>
+			</div>			
+		</div>
+	</section>
+	
+	<?php
+
+	include "parse.php";
+
+?> 
+	<div class="flexes"><footer id="footer" class="footer">
+	<div id="inline">
+<h5>Ваше мнение</h5>
+<form id="contact" action="#" method="post" name="contact">
+<input id="name" class="txt" name="name" type="name" placeholder="Ваше имя">
+<textarea id="msg" class="txtarea" name="msg" placeholder="Ваше сообщение:"></textarea><button id="send">Отправить</button></form></div><aside>
+	<h5 class="commentheader">Последние комментарии</h5>
+	<div class="peopleRow">
+		<div class="figure"></div><p>Владимир Андреевич</p>
+	</div>
+	<p class="commentcolor">Вкусный чай</p>
+	<div class="peopleRow">
+		<div class="figure"></div><p>Антон Михайлович</p>
+	</div>
+	<p class="commentcolor">Бергамот бы сейчас...</p>
+	<div class="peopleRow">
+		<div class="figure"></div><p>Владимир</p>
+	</div>
+	<p class="commentcolor">Не очень</p>
+	<div class="peopleRow">
+		<div class="figure"></div><p>Павел</p>
+	</div>
+	<p class="commentcolor">Неизменно вкусно</p>
+</aside></div>
+		<div class="container">
+			<div class="footer-text">
+				<p>©1989-2021 Copyright</p>
+				<p>Даниил Шишкин</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
