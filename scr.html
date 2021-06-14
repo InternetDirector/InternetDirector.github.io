@@ -76,38 +76,15 @@ alert('Площадь= '+Math.PI*Math.pow(R,2));
 <input type="Button" value="Увеличенный" onclick="modification(1);">
 <input type="Button" value="Нормальный" onclick="modification(0);">
 <input type="Button" value="Уменьшенный" onclick="modification(2);">
-<script language="JavaScript">
-function modification(action){
-switch(action) {
-  case 1:
-    document.all["p1"].style.fontSize="150%";
-    break;
-  case 0:
-    document.all["p1"].style.fontSize="100%";
-    break;
-	case 2:
-    document.all["p1"].style.fontSize="64%";
-    break;
-  default:
-    break;
-}
-}
-</script>
 <br>
 <b><i>Цвет фона: </i></b>
 <input type="Button" value="Чёрный" onclick="cngBg('black');">
 <input type="Button" value="Розовый" onclick="cngBg('pink');">
 <input type="Button" value="Тёмно-зелёный" onclick="cngBg('darkslategrey');">
 <input type="Button" value="Белый" onclick="cngBg('white');">
-<script language="JavaScript">
-function cngBg(clr){
-document.bgColor=clr;
-}
-</script>
 <br>
-<p onmouseover="this.style.color = 'white'" onmouseout="this.style.color=''">1) Напишите скрипт, изменяющий цвет текста первого абзаца при наведении мышкой.</p>
-2) Напишите скрипт, изменяющий цвет фона текста второго абзаца при щелчке мышкой.
-<br>
-3) Напишите скрипт, изменяющий цвет фона текста третьего абзаца при двойном щелчке.
+<p onmouseover="return Changetxtcol(this);">1) Напишите скрипт, изменяющий цвет текста первого абзаца при наведении мышкой.</p>
+<p onclick="return ChangeColor(this);">2) Напишите скрипт, изменяющий цвет фона текста второго абзаца при щелчке мышкой.</p>
+<p ondblclick="return ChangeColor(this);">3) Напишите скрипт, изменяющий цвет фона текста третьего абзаца при двойном щелчке.</p>
 </body>
 </html>
